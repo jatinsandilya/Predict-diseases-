@@ -1,0 +1,248 @@
+body{
+  font-family: 'Nirmala UI';
+  font-weight: normal;
+  color:#666666;
+ font-size: 14px;
+}
+.body_wrapper {
+    position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color:#666666;
+}
+.navbar-default{
+  background:#000 !important;
+  border-radius:0px !important;
+  border:0px !important;
+}
+header{
+  padding:10px 0px;
+  background:#000;
+}
+.nav >li {
+    min-height: 60px;
+}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand{
+  color:#fff !important;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  background:transparent !important;
+}
+.navbar{
+  margin-bottom:0px !important;
+  padding-top: 10px;
+}
+
+
+
+
+.aside-dashboard{
+    float: left;
+    width: 220px;
+    background: #38354a;
+    min-height: 100vh;
+    font-size: 16px;
+    position: fixed;
+    padding: 0;
+}
+.aside-dashboard a{
+  color:#fff;
+}
+.aside-logo{
+  background:#1f1c34;
+  padding:10px 15px;
+  text-align:center;
+}
+a.side-logo{
+  float:none;
+  display:inline-block;
+  color:#fff;
+  text-decoration:none;
+    font-size: 22px;
+    line-height: 28px;
+    padding: 5px 10px;
+}
+a.side-logo:hover{
+  text-decoration:none;
+  color:#fff;
+}
+.aside-dashboard-in{
+  padding:25px 0px;
+}
+.aside-avtar-outer{
+  text-align:center;
+}
+img.profile-img{
+  float:none;
+  display:inline-block;
+  height:142px;
+  width:142px;
+  overflow:hidden;
+  object-fit:cover;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+}
+.dd-arrow{
+  float:none;
+  display:inline-block;
+  background:url(/images/aside-dd-arrow.png) no-repeat;
+  width:6px;
+  height:5px;
+  margin-left:10px;
+}
+.aside-dd-ul{
+  float:left;
+  width:100%;
+  padding:25px 30px 10px;
+  list-style:none;
+  margin-left:0px;
+  border-bottom:2px solid #26233a;
+}
+.aside-dd-ul li{
+  float:left;
+  width:100%;
+}
+.aside-dd-ul li a{
+  color:#fff;
+  font-size:12px;
+}
+.aside-dd-ul li.aside-with-dd a{
+  font-size:16px;
+}
+.aside-dd-ul li a:hover, .aside-dd-ul li a:focus{
+  text-decoration:none;
+}
+.aside-with-dd{position:relative;}
+.aside-dd-ul-sub{
+  width:100%;
+  opacity:0;
+  visibility:hidden;
+  transition: all 0.5s ease 0s;
+  position:absolute;
+  margin-left:0px;
+  padding:10px;
+  background-color:rgba(80, 76, 106, 1);
+  list-style:none;
+  margin-top:10px;
+}
+.aside-sub-show.aside-dd-ul-sub{
+  opacity:1;
+  visibility:visible;
+}
+.aside-bottom-ul{
+  float:left;
+  width:100%;
+  padding:0px;
+  margin:0px;
+  list-style:none;
+}
+.aside-bottom-ul li{
+  padding:12px 25px;
+  background:#38354a;
+  float:left;
+  width:100%;
+  line-height:16px;
+  margin-bottom:1px;
+}
+.aside-bottom-ul li.active{
+  background:#1baab2;
+}
+.aside-bottom-ul li a{
+  color:#fff;
+  font-size:14px;
+}
+.aside-bottom-ul li a:hover{
+  text-decoration:none;
+}
+
+.dashboard-right{
+  width:100%;
+  background:#efefef;
+  min-height:100vh;
+    float:left;
+}
+.dashboard-right-top{
+  padding:15px 15px;
+  background:#fff;
+  float:left;
+  width:100%;
+  margin-bottom:15px;
+    height: 67px;
+}
+.dashboard-right-top h4{
+  font-size:16px;
+  color:#666666;
+  float:left;
+}
+.db-right-search-noti{
+  float:right;
+  margin-left:0px;
+  list-style:none;
+  padding-left:0px;
+}
+.db-right-search-noti li{
+  float:left;
+  position:relative;
+}
+.db-right-search-noti li.top_search{
+  padding-right:20px;
+  margin-right:20px;
+}
+.db-right-search-noti li.top_search:after{
+  position:absolute;
+  top:0px;
+  right:0px;
+  width:1px;
+  height:30px;
+  content:"";
+  background:#2c2c2c;
+}
+.db-right-search-noti li.top_noti span{
+  background:#1baab2;
+  position:absolute;
+  color:#fff;
+  font-size:10px;
+  padding:2px 4px;
+  min-width:20px;
+  text-align:center;
+  top:-10px;
+  right:-8px;
+  z-index:1;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+}
+.dashboard-right-bg-box{
+  float:left;
+  width:100%;
+}
+.dashboard-right-bg-shadow{
+  padding:20px;
+  margin:15px;
+  background:#fff;
+  -moz-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.13);
+  box-shadow:0px 0px 5px rgba(0, 0, 0, 0.13);
+}
+
+.predict-nav-toggle {
+  margin-right: 0;
+  border: 0;
+  padding: 6px 9px;
+}
+.predict-nav-toggle .icon-bar{
+    background: #38354a;
+}
+.predict-sidebar-nav .navbar.navbar-default{
+position: fixed;padding:0;margin: 0;z-index: 9;
+}
+
+@media (min-width: 768px) {
+  .aside-margin {
+    margin-left: 220px;
+}
+}

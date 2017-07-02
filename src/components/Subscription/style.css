@@ -1,0 +1,19 @@
+.boxShadow {
+  background: #fff;
+  margin: 1rem 30px !important;
+  box-shadow: 0px 0px 5px 1px #ccc;
+}
+.fileUpload {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #ababab;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.fileUpload div {
+    padding: 15px;
+    text-align: center;
+}

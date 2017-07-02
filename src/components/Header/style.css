@@ -1,0 +1,53 @@
+.pdHeader {
+  background: #fff;
+  align-items: center !important;
+  margin: 0 auto !important;
+}
+
+.pdHeader button.ui.icon.button {
+  background: #1CAAB2;
+  color: #fff;
+  font-size: 1.5em;
+  border-radius: 0;
+}
+
+.logo {
+  display: flex !important;
+  padding: 0 !important;
+}
+
+.productName h3 {
+  color: #1caab2;
+  font-weight: normal;
+  text-align: center;
+}
+
+.userInfo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end;
+  padding: 0 40px !important;
+}
+
+.borderedIcon {
+  padding: 0 10px;
+  border-right: 1px solid #000;
+}
+
+.pdHeader .ui.menu {
+  font-size: 1rem !important;
+  border: none !important;
+  box-shadow: 0 0 0 0;
+}
+
+.pdHeader .ui.menu .item:before {
+  background: none;
+}
+
+.pdHeader .ui.menu .item>.floating.label {
+  padding: .2em .485714em !important;
+}
+
+.pdHeader .ui.floating.label {
+  margin: 10px 0px 0px -2.0em!important;
+}

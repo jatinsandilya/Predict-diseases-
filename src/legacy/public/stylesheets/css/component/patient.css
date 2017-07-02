@@ -1,0 +1,133 @@
+.patient_examined{
+  width:100%;
+  float:left;
+  padding:30px;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  background:#f5f5f5;
+  margin-top:-15px;
+  margin-bottom:20px;
+}
+.patient_examined h4{
+  font-size:18px;
+  font-weight:bold;
+  margin-top:0px;
+  margin-bottom:20px;
+
+}
+.patient_examined .col-md-5{
+  padding-left:0px;
+}
+.patient_examined .col-md-12{
+  padding-left:0px;
+}
+.patient_examined .col-md-7{
+  padding:0px;
+}
+.patient_examined img{
+  margin:0px 10px 3px;
+}
+.patient_examined label{width:60px;}
+.patient_examined input{padding:0px 10px;}
+.patient-search-box img{
+  float:left;
+  margin-right:20px;
+}
+.patient-search-box .search-box{
+  float:left;
+  width:86%;
+}
+.patient-search-box .search-box input{
+  width:72%;
+  padding:6px 15px;
+}
+.patient-search-box .search-box .db-table-btn{
+  margin:0px;
+  padding:9px 20px;
+}
+.patient-search-box .search-box .dark-button{
+  padding:8px 20px;
+}
+.patient-search-box .search-box h4{
+  font-weight:600;
+  margin-top:20px;
+  float:left;
+  width:100%;
+}
+.patient-search-box .dashboard-right-bg-shadow{
+  padding:0px;
+}
+.patient-reminder .dashboard-right-bg-shadow{
+  margin:15px 0px;
+  float:left;
+}
+.patient-reminder .dashboard-right-bg-shadow img{
+  border-radius:100%;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  float:left;
+}
+.patient-reminder .dashboard-right-bg-shadow p{
+  float:left;
+  margin:10px;
+}
+.patient-reminder .col-md-12{
+  margin-bottom:20px;
+  padding:0px;
+}
+.patient-reminder h4{
+  position:relative;
+  padding-left:30px;
+}
+.patient-reminder h4:before{
+  position:absolute;
+  content:"";
+  background:url(/images/reminder.png) no-repeat;
+  width:40px;
+  height:35px;
+  top: -3px;
+    left: 0px;
+}
+@-moz-document url-prefix() {
+  .patient_examined input{width:46%;}
+}
+/*Responsive Code*/
+@media (max-width:1288px){
+  .patient_examined .dark-button{margin-left:62px;}
+  .patient-search-box .search-box input{width:60%;}
+}
+  .patient_examined .dark-button{margin-left:0px;}
+  .high-risk-patient {
+    float: left;
+    width: 100%;
+}
+.high-risk-patient .col-md-4{margin-bottom:15px;}
+.patient-search-box .search-box input{width:100%;margin-bottom:15px;}
+.patient-search-box{text-align:center;}
+.patient-search-box .search-box{width:100%;padding:20px;text-align:center;}
+.patient-search-box img{float:none;display:inline-block;padding-top:15px;}
+.patient-search-box .dark-button{float:none;display:inline-block;}
+.patient-search-box .search-box .db-table-btn{float:none;display:inline-block;}
+.patient-reminder .dashboard-right-bg-shadow{width:100%;}
+
+ @media screen and (max-width: 767px) {
+   .patient_examined input{margin-bottom:15px;}
+   .patient_examined img{margin:0;}
+}
+ @media screen and (max-width: 600px) {
+   .patient-search-box .dark-button{
+    width:100% !important;
+    margin-left:0px;
+    margin-bottom:15px;
+  }
+  .patient-search-box .search-box .db-table-btn{
+    width:100%;
+  }
+  .popup-risk span:before {
+    width: 14px;
+    height: 2px;
+    top: -20px;
+    left: 46px;
+  }
+}

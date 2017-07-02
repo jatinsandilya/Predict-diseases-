@@ -1,0 +1,227 @@
+.patientInfo {
+  display: flex !important;
+  padding: 0px 20px !important;
+  background: #F4F5F5;
+  margin: 0 auto !important;
+}
+
+.miniLinks {
+  padding: 0px 20px !important;
+  background: #F4F5F5;
+  margin: 5px auto !important;
+}
+
+.miniLinks .item {
+  font-size: 12px !important;
+  color: #888 !important;
+}
+
+.miniLinks .column {
+  padding-top: 0.5em !important;
+  padding-bottom: 0.5em !important;
+}
+
+.headerTitle {
+  font-size: 18px !important;
+  color: #656565 !important;
+  font-weight: normal !important;
+}
+
+.ui.label.headerTitleLabel {
+  display: flex;
+  align-items: center;
+}
+
+.ui.label.headerTitleLabel p {
+  font-size: 18px !important;
+  color: #656565 !important;
+  font-weight: normal !important;
+}
+
+.visitInfo {
+  background: #fff;
+  margin: 1rem 30px !important;
+  box-shadow: 0px 0px 5px 1px #ccc;
+}
+
+.previousVisit {
+  padding: 15px 25px !important;
+}
+
+.previousVisit .header {
+  font-weight: normal !important;
+}
+
+.previousVisit .list {
+  display: flex !important;
+  flex: 1 !important;
+  margin: 15px auto !important;
+}
+
+.previousVisit .item {
+  font-size: 12px !important;
+  flex: 1;
+}
+
+.previousVisit .item p {
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+}
+
+.activeMedication .list {
+  display: flex !important;
+  align-items: center;
+}
+
+.activeMedication .item {
+  font-size: 12px !important;
+  flex: 1 !important;
+  text-align: center;
+}
+
+.activeMedication .item p {
+  margin: 0;
+}
+
+.recommendation {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.nextVisit {
+  padding: 10px 20px;
+}
+
+.cardBlock {
+  background: #fff;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.cardBlock .label {
+  background: none !important;
+  font-weight: 600 !important;
+}
+
+p.cardContent {
+  padding: 10px;
+}
+
+p.cardPercent {
+  padding: 0px 10px;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+a.adjustPercent {
+  padding: 0 10px;
+}
+
+.poor {
+  background: #D72723;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.good {
+  background: #91D14F;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.chkbox {
+  background: rgba(149, 223, 220, 0.33);
+  border-radius: 50px;
+}
+
+.chkbox label:after {
+  background: rgba(149, 223, 220, 0.77) !important;
+}
+
+.checked.chkbox label:after {
+  background: rgb(241, 241, 241) !important;
+}
+
+.goals .item {
+  padding: 15px 0 !important;
+}
+
+.space {
+  padding: 50px 0;
+}
+
+.preventive .icon.button {
+  background: none;
+  padding: 10px 5px;
+}
+
+.preventive .icon.button i.icon {
+  font-size: 1.5rem;
+}
+
+.preventive .item {
+  padding: 15px 0 !important;
+}
+
+.goals, .listRecommendations, .preventive {
+  padding: 10px 25px;
+}
+
+.addPreventive {
+  padding: 0 !important;
+}
+
+.addPreventive i.icon {
+  font-size: 2.5rem !important;
+  color: #373549;
+}
+
+.subscriptionMsg {
+  text-align: center;
+  background: #373549 !important;
+  width: 50%;
+  margin: 0 auto !important;
+}
+
+.stats .label {
+  font-weight: 400 !important;
+  text-transform: lowercase !important;
+  text-align: left !important;
+  color: #fff !important;
+}
+
+.stats .value {
+  color: #fff !important;
+}
+
+.statBlue, .statBlack {
+  display: flex;
+}
+
+.statBlue {
+  background: #00b5ad !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.statBlack {
+  background: #373549 !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.recharts-wrapper {
+  height: 150px !important;
+}
+
+.scoreChartContainer .headerTitle {
+  margin-left: 20px;
+}

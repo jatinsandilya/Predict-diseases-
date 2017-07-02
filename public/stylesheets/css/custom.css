@@ -1,0 +1,62 @@
+.m-t-xl{
+    margin-top:10%;
+}
+.s-l-xl{
+    margin-top:20%;
+}
+.search-bar{
+    max-width: 300px;
+    margin-right: 70%;
+}
+
+.spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -75px 0 0 -75px;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #4bbfcb;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -75px 0 0 -75px;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #4bbfcb;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.nt-dib{
+    display: inline-block;
+}
+
+
+
+.react-grid-Cell--locked:last-of-type{z-index: 0 !important;}
+.react-grid-Cell__value .form-group{margin: 0px;}
+.react-grid-Viewport .react-grid-Canvas { overflow-y: auto !important;}
+.table-responsive.subsc-table{
+    margin-top: 10px;
+    overflow: hidden;
+}

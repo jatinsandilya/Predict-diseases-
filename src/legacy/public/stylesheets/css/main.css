@@ -1,0 +1,21 @@
+@import './vendor.css';
+@import './base.css';
+@import './hacks.css';
+@import './home/font.css';
+@import './bootstrap-override.css';
+@import './dashboard-general.css';
+
+@import './pages/login.css';
+@import './pages/not-found.css';
+@import './pages/home.css';
+
+@import './component/fileInput.css';
+@import './component/PElements.css';
+@import './component/patient.css';
+@import './component/signup.css';
+@import './component/filepicker.css';
+@import './component/alterModalCustom.css';
+@import './component/importExport.css';
+@import './component/pagination.css';
+@import './component/footer.css';
+@import 'custom.css';
