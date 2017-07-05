@@ -15,6 +15,7 @@ constructor(props, context) {
 				filesData = {
             files: []
         };
+        console.log("In AddTeamDetailsComp.js",this.props);
     }
 
 		onDrop(files) {
@@ -161,8 +162,9 @@ handleTeamDetailsSubmit(event) {
 			organisation_id
     };
 		var queryData={};
-		if(this.props.selectedTeamDetailsRow.action == 'edit'){
-			queryData={team_info:team_info,team_member_id:this.editTeamData.team_member_id};
+		if(this.props.selectedTeamDetailsRow.action === 'edit'){
+			console.log("DEBUG!!: \n",this.editTeamData.organisation_id);
+			queryData={team_info:team_info,team_member_id:this.editTeamData.organisation_id};
 		}
 		else{
 			queryData={team_info:team_info};

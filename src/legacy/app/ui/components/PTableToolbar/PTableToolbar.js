@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
 export default class PTableToolbar extends Component {
     constructor(props) {
@@ -16,13 +15,13 @@ export default class PTableToolbar extends Component {
         switch (action) {
             case 'add':
                 return (x) => this.onAdd.call(this, action);
-                break;
+                // break;
             case 'delete':
                 return (x) => this.onDelete.call(this, action,this.props.name);
-                break;
+                // break;
             case 'edit':
                 return (x) => this.onEdit.call(this, action);
-                break;
+                // break;
             case 'upload':
                 return (x) => this.onUpload.call(this, action);
             default:

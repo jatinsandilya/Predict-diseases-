@@ -320,6 +320,9 @@ handleOrganisationSubmit(event) {
 	const contact_person = this.contactPerson.value;
 	const address = this.address.value;
 	const website = this.website.value;
+	const orgType = {
+		
+	}
 	const organisation_type = this.state.selectedOrgRadio;
 	const organisation_image = this.refs.orgAvtar.value;
     // create a user object
@@ -341,12 +344,12 @@ handleOrganisationSubmit(event) {
       } else {
         toastr.success(res.message||"Requested successfully.");
 				// clear form
-				this.organisationName.value="";
-				this.phoneNumber.value="";
-				this.providerId.value="";
-				this.contactPerson.value="";
-				this.address.value="";
-				this.website.value="";
+				// this.organisationName.value="";
+				// this.phoneNumber.value="";
+				// this.providerId.value="";
+				// this.contactPerson.value="";
+				// this.address.value="";
+				// this.website.value="";
 		}
     });
   }

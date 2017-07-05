@@ -11,7 +11,9 @@ import TeamDetails from './TeamDetailsComponent';
 export default class SubscriptionComponent extends Component{
   constructor(props){
     super(props);
+    // this.state = {assignedPhysicians : this.props.assignedPhysicians,teamDetails:this.props.teamDetails,patientDetails:this.props.patientDetails}
   }
+  
   render(){
     console.log('in SubscriptionComponent',this.props);
     return(<div>

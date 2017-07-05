@@ -24,6 +24,7 @@ class PatientDetailsComponent extends Component {
 						upload:this.props.openTemplatePatientModal
 					 }
 				}
+		console.log(this.patientToolbarConfig)		
 		this.selectedPatientIndexes=[];
 
 		this.columns=[
@@ -152,7 +153,7 @@ getDropdown(rowValue, source){
 					<div className="row">
 					<div className="col-md-12">
 							<div className="table-responsive subsc-table">
-									<GridComponent {...this.props} 
+									<GridComponent  
 									rows={this.props.patientDetails.rows} 
 									columns={this.columns} 
 									toolbarConfig={this.patientToolbarConfig}
@@ -167,7 +168,7 @@ getDropdown(rowValue, source){
 											<div className="pull-right">
 												<PaginationComponent
 											items={this.props.patientDetails.rows?this.props.patientDetails.rows.length:1}
-											totalItems={5}
+											totalItems={10}
 										    maxShowItem={10}
 										  	handleSelect={this.props.onPatientPageSelect}
 											loadDataByPagination = {this.props.loadPatientData}

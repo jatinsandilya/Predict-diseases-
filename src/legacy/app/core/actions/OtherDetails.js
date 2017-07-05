@@ -7,9 +7,12 @@ import {OTHER_DETAILS_API} from '../../apiconfig';
 export const saveOtherDetails = (queryData, callback) => {
   return function(dispatch) {
     //submit other details   
+    	
       dispatch({type: 'OTHER_DETAILS_REQUEST'});
       axios.post(OTHER_DETAILS_API.ADD, queryData.other_details)
       .then((response)=>{
+      	console.log("In saveOtherDetails.js response: \n",response)
+      	
         dispatch({type: 'OTHER_DETAILS_SUCCESS', payload: response.data});
         if (typeof callback === 'function') {
            callback(null, response.data);

@@ -52,12 +52,13 @@ export const onPatientPageSelect=(page,callback)=>{
   }
 };
 
-export const handleGridRowsUpdated = (data, callback) => {
+export const handleGridRowsUpdated = (data,callback) => {
     return function(dispatch) {
         //row updated on api
         //
         dispatch({type: 'HANDLE_GRIDROW_UPDATED',payload:data});
         var id = data.patient_member_id;
+        // console.log(rows);
          axios.put(PATIENT_API.EDIT+`${id}`, data).then((res)=>{
             //show msg
             console.log('successful update');
@@ -72,11 +73,13 @@ export const handleGridRowsUpdated = (data, callback) => {
     }
 };
 
-export const updatePatientsAssignedPhysician = (rowValue, physician) => {
-rowValue.assigned_physician_id = physician
+export const updatePatientsAssignedPhysician = (rowValue, physician) => { // Works
+        rowValue.physician_id = physician
   return function(dispatch){
     //  dispatch({type: 'UPDATE_PATIENT_ASSIGNED_PHYSICIAN_BEGIN',payload:data});
-          var id = rowValue.patient_member_id;
+          var id = rowValue.patient_id;
+          console.log("In AppSubActions.js\n");
+          console.log(rowValue,physician)
          axios.put(PATIENT_API.EDIT+`${id}`, rowValue).then((res)=>{
             //show msg
             console.log('successful update');
@@ -148,13 +151,14 @@ export const loadPatientData = (currPage=1,pageSize=10) => {
     dispatch({type: 'LOADING_PATIENT_DATA_REQUEST'}); 
     var URL= PATIENT_API.LOAD+`${currPage}/${pageSize}`;
       axios.get(URL).then((res)=>{
+        console.log(res.data.data);
             var response = {
-                rows:JSON.parse(res.data.data),                  
+                rows:(res.data.data),                  
                 activePage:currPage
             }
        dispatch({type: 'LOADING_PATIENT_DATA_SUCCESS',payload:response});
    }).catch((error) => {
-     console.log('error ' + error);
+     console.log('error :',error);
   });
   }
 };
@@ -172,7 +176,7 @@ axios.get(URL).then((res)=>{
      dispatch({type: 'LOADING_TEAM_DATA_SUCCESS',payload:response});
   })
  .catch((error) => {
-     console.log('error ' + error);
+     console.log('error :',error);
   });   
   }
 };
@@ -191,7 +195,6 @@ export const showTeamModal = (data) => {
     dispatch({type: 'SHOW_TEAM_MODAL', payload:data});
     dispatch({type: 'SHOW_MODAL', payload:{currentModal:'TEAM_MODAL'}});
   }};
-
   export const closeTeamModal = () => {
   return function(dispatch) {  
     //create subscription action creater here
@@ -257,11 +260,13 @@ export const showTeamModal = (data) => {
   
   export const teamRecordDelConfirm = (data) => {
   return function(dispatch) {  
-    if(data && data.length>0){
+      console.log(data);
+      if(data && data.length>0){
        let patientIds = data.map((f)=>{
         return f.row.team_member_id
       })
-      let queryData={"team_member_ids":patientIds};
+       console.log(patientIds);
+      let queryData={"team_member_ids":patientIds}; // No team_member_ids field in api
       axios.post(TEAM_API.DELETE,queryData)
         .then((response)=>{
           dispatch({type: 'DELETE_TEAM_MEMBER_SUCCESS', payload: {data:data,response:response.data}});
@@ -279,11 +284,13 @@ export const patientRecordDelConfirm = (data) => {
   return function(dispatch) {  
     if(data && data.length>0){
       let patientIds = data.map((f)=>{
-        return f.row.patient_member_id
+        return f.row.patient_id
       })
-      let queryData={"patient_member_ids":patientIds};
-      axios.post(PATIENT_API.DELETE,queryData)
+      console.log(patientIds)
+      const queryData={ patient_ids :patientIds};
+      axios.delete(PATIENT_API.DELETE,{ data : queryData})
         .then((response)=>{
+          console.log("DELETE response:\n",response);
           dispatch({type: 'DELETE_PATIENT_MEMBER_SUCCESS', payload: {data:data,response:response.data}});
         })
         .catch((error) => {

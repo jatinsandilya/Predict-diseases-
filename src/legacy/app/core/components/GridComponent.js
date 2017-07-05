@@ -7,17 +7,17 @@ import PToolbar from '../../ui/components/PTableToolbar/PTableToolbar';
 class GridComponent extends Component {
  constructor(props){
    super(props);
+   console.log("In Grid Component: ",this.props);
+
    this.handleGridRowsUpdated = this.handleGridRowsUpdated.bind(this); 
-   this.onAdd = function(){ alert("On Add!")};
-   this.onEdit = function(){ alert("On Edit!")};
-   this.onDelete = function(){ alert("On Edit!")};
-   // if(this.props.toolbarConfig.actions.upload)
-   // {
-   //    this.onUpload = this.props.toolbarConfig.actions.upload.bind(this);
-   // }
-   //this.onRowsSelected=this.props.onRowsSelected.bind(this);
-   //this.onRowsDeselected=this.props.onRowsDeselected.bind(this);
-   //this.selectedIndexes=this.props.selectedIndexes||[];
+   this.onAdd = this.props.toolbarConfig.actions.add.bind(this);
+   this.onEdit = this.props.toolbarConfig.actions.edit.bind(this);
+   this.onDelete = this.props.toolbarConfig.actions.delete.bind(this);
+
+  
+   this.onRowsSelected=this.props.onRowsSelected.bind(this);
+   this.onRowsDeselected=this.props.onRowsDeselected.bind(this);
+   this.selectedIndexes=this.props.selectedIndexes||[];
    this.state={selectedIndexes:[]};
  }
 

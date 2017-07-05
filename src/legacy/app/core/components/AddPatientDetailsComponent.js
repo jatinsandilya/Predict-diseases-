@@ -228,38 +228,40 @@ handlePatientDetailsSubmit(event) {
     const thisObj = this;
     event.preventDefault();
 
-    const name = ReactDOM.findDOMNode(thisObj.refs.name).value.trim();
+    	const name = ReactDOM.findDOMNode(thisObj.refs.name).value.trim();
 		const gender = thisObj.state.selectedDropDownGender;
 		const age = ReactDOM.findDOMNode(thisObj.refs.age).value.trim();
 		const location = ReactDOM.findDOMNode(thisObj.refs.location).value.trim();
 		const height = ReactDOM.findDOMNode(thisObj.refs.height).value.trim();
 		const martial_status = ReactDOM.findDOMNode(thisObj.refs.martial_status).value.trim();
 		const race = ReactDOM.findDOMNode(thisObj.refs.race).value.trim();
-		const assigned_physician = ReactDOM.findDOMNode(thisObj.refs.assigned_physician).value.trim();		
-		const assigned_physician_id = 1;
+		const physician_name = ReactDOM.findDOMNode(thisObj.refs.assigned_physician).value.trim();		
+		const physician_id = 1;
 		const organisation_id = 1;    
 		// create a user object
-    const patient_info = {
-      name,
-      gender,
-			age,
-			location,
-			height,
-			martial_status,
-			race,
-			assigned_physician,
-			assigned_physician_id
-    };
+	    const patient_info = {
+	      name,
+	      gender,
+				age,
+				location,
+				height,
+				martial_status,
+				race,
+				physician_name,
+				physician_id,
+				organisation_id
+	    };
+   		// const patient_info = {name: "patient124", gender: "male", age: "30", location: "mumbai", height:"170", martial_status:"married", race:"black", physician_name: "physician1", physician_id: 1, organisation_id: 1};
 		var queryData={};
-		if(this.props.selectedPatientDetailsRow.action == 'edit'){
-			queryData={patient_info:patient_info,patient_member_id:this.editPatientData.patient_member_id};
+		if(this.props.selectedPatientDetailsRow.action === 'edit'){
+			queryData={patient_info:patient_info,patient_id:this.editPatientData.patient_id}; // works!
 		}
 		else{
 			queryData={patient_info:patient_info};
 		}
     $('#spinner').css({'display': ''});
 
-    this.props.addPatientDetails(patient_info,(err, res) => {
+    this.props.addPatientDetails(queryData,(err, res) => {
        $('#spinner').css({'display': 'none'});
       if (err) {
         toastr.error(err||'Request Failed');

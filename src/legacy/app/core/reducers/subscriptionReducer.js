@@ -48,16 +48,13 @@ const subscriptionReducer = (state = {} , action) => {
       });
     break;
     case 'DELETE_PATIENT_MEMBER_SUCCESS':
-      var patientIds=action.payload.data.map((f)=>{
-        return f.row.patient_member_id
-      });
-      var patientDetails = state.patientDetails.rows.filter((f)=> {
-        return patientIds.indexOf(f.patient_member_id) == -1 ;
-      });
-       state.patientDetails.rows= [];
+
+      var indxsToDel = action.payload.data.map((item)=>(item.rowIdx));
+      var patientDetailsNew =  state.patientDetails.rows.filter((item,index)=>{if(indxsToDel.indexOf(index)<0) return item;})
+      var patientDetails = state.patientDetails.rows;
       return Object.assign({},state,{
         patientDetails:{
-          rows:[...patientDetails]
+          rows:[...patientDetailsNew]
         }
       });
     break;
@@ -183,9 +180,35 @@ const subscriptionReducer = (state = {} , action) => {
         
         return state;
       break;
+      case 'EDIT_PATIENT_SUCCESS':
+       const editData = action.newData;
+       const prevState = state;
+       const rowIndex = prevState.selectedPatientDetailsRow[0].rowIdx;
+       const patientDetailsEdited = [...prevState.patientDetails.rows.slice(0,rowIndex), editData , ...prevState.patientDetails.rows.slice(rowIndex+1)]
+       state = Object.assign({},state,{
+        	patientDetails : {
+        		rows: patientDetailsEdited
+        	}
+        });
+      return state;
+      break;
+      case 'EDIT_PATIENT_FAILURE':
+        
+        return state;
+      break;
       case 'ADD_TEAM_MEMBER_REQUEST':
         state.teamDetailsShowModal = false;
         state = Object.assign({},state);
+        return state;
+      break;
+      case 'ADD_PATIENT_SUCCESS':
+        const newData = action.newData; //works! 
+        const patientDetailsNew = [...state.patientDetails.rows,newData]
+        state = Object.assign({},state,{
+        	patientDetails : {
+        		rows: patientDetailsNew
+        	}
+        });
         return state;
       break;
       case 'ADD_PATIENT_MEMBER_REQUEST':
@@ -201,7 +224,7 @@ const subscriptionReducer = (state = {} , action) => {
            console.log('it' , item);
            if(action.payload && action.payload.row && 
            item.patient_member_id === action.payload.row.patient_member_id){
-             item.assigned_physician_id = action.payload.physician;
+             item.physician_id = action.payload.physician;
            }
             return item;
         });

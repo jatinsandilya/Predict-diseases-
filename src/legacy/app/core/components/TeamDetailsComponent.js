@@ -8,73 +8,73 @@ import PaginationComponent from '../../ui/components/pagination/PaginationCompon
 import ConfirmModal from '../containers/ConfirmModalContainer';
 
 class TeamDetailsComponent extends Component {
-	// constructor(props) {		
- //    super(props);
-	// 	 this.showTeamModal=this.props.showTeamModal.bind(this);		 
-	// 	 this.closeConfirmModal=this.props.closeConfirmModal.bind(this);
-	// 	 this.showConfirmModal=this.props.showConfirmModal.bind(this);
-	// 	 this.selectedTeamIndexes=[];	 
-	// 	 this.columns=[
-	// 			{
-	// 				"key": "name",
-	// 				"name": "Name (Job Title)",
-	// 				resizable: true,
-	// 				width: 170,
-	// 			},
-	// 			{
-	// 				"key": "age",
-	// 				"name": "Age",
-	// 				resizable: true,
-	// 				width: 60,
-	// 			},
-	// 			{
-	// 				"key": "nickname",
-	// 				"name": "Nickname",
-	// 				resizable: true,
-	// 				width: 115,
-	// 			},
-	// 			{
-	// 				"key": "employee",
-	// 				"name": "Employee",
-	// 				resizable: true,
-	// 				width: 115,
-	// 			},
-	// 			{
-	// 				"key": "speciality",
-	// 				"name": "Speciality",
-	// 				resizable: true,
-	// 				width: 115,
-	// 			},
-	// 			{
-	// 				"key": "phone",
-	// 				"name": "Phone",
-	// 				resizable: true,
-	// 				width: 115,
-	// 			},
-	// 			{
-	// 				"key": "email",
-	// 				"name": "E-Mail",
-	// 				resizable: true,
-	// 				width: 159,
-	// 			},
-	// 			{
-	// 				"key": "upload_picture",
-	// 				"name": "Upload Picture",
-	// 				resizable: true,
-	// 				width: 120,
-	// 				formatter: ({value}) => <TeamMemUploadImage value={value} onUpload={this.onTeamUploadImage.bind(this)} />
-	// 			}];
+	constructor(props) {		
+    super(props);
+		 this.showTeamModal=this.props.showTeamModal.bind(this);		 
+		 this.closeConfirmModal=this.props.closeConfirmModal.bind(this);
+		 this.showConfirmModal=this.props.showConfirmModal.bind(this);
+		 this.selectedTeamIndexes=[];	 
+		 this.columns=[
+				{
+					"key": "name",
+					"name": "Name (Job Title)",
+					resizable: true,
+					width: 170,
+				},
+				{
+					"key": "age",
+					"name": "Age",
+					resizable: true,
+					width: 60,
+				},
+				{
+					"key": "nickname",
+					"name": "Nickname",
+					resizable: true,
+					width: 115,
+				},
+				{
+					"key": "employee",
+					"name": "Employee",
+					resizable: true,
+					width: 115,
+				},
+				{
+					"key": "speciality",
+					"name": "Speciality",
+					resizable: true,
+					width: 115,
+				},
+				{
+					"key": "phone",
+					"name": "Phone",
+					resizable: true,
+					width: 115,
+				},
+				{
+					"key": "email",
+					"name": "E-Mail",
+					resizable: true,
+					width: 159,
+				},
+				{
+					"key": "upload_picture",
+					"name": "Upload Picture",
+					resizable: true,
+					width: 120,
+					formatter: ({value}) => <TeamMemUploadImage value={value} onUpload={this.onTeamUploadImage.bind(this)} />
+				}];
   	
-	// 			this.teamToolbarConfig={
-	// 				name:"team details",
-	// 				actions:{
-	// 					add:this.props.showTeamModal,
-	// 					edit:this.props.showTeamModal,
-	// 					delete:this.props.showConfirmModal//,
-	// 					//upload:this.props.openTemplateModal
-	// 				}
-	// 			}
-	// }
+				this.teamToolbarConfig={
+					name:"team details",
+					actions:{
+						add:this.props.showTeamModal,
+						edit:this.props.showTeamModal,
+						delete:this.props.showConfirmModal,
+						upload:this.props.openTemplateModal
+					}
+				}
+	}
 
 	onTeamUploadImage(files,rowObj){
 		// this.props.teamHandleGridRowsUpdated({files,rowObj});
@@ -157,7 +157,7 @@ class TeamDetailsComponent extends Component {
 						<div className="row">
 						<div className="col-md-12">
 								<div className="table-responsive subsc-table">
-										<GridComponent {...this.props}
+										<GridComponent 
 										rows={this.props.teamDetails.rows} 
 										columns={this.columns} 
 										toolbarConfig={this.teamToolbarConfig}									
@@ -168,6 +168,7 @@ class TeamDetailsComponent extends Component {
 										minHeight={391}
 										rowHeight={35}
 										selectedRows={this.props.selectedTeamDetailsRow}
+										{...this.props}
 										/>
 										<div className="pull-right">
 											<PaginationComponent
