@@ -1,7 +1,5 @@
-'use strict';
-
 import axios from 'axios';
-import config from '../../../config'
+
 import {OTHER_DETAILS_API} from '../../apiconfig';
 
 export const saveOtherDetails = (queryData, callback) => {

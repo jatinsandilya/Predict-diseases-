@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import {Editors} from 'react-data-grid-addons';
+
 import GridComponent from './GridComponent';
-import ReactDOM from 'react-dom';
 import {ModalContainer, ModalDialog} from 'react-modal-dialog';
-import AddPatientDetailsContainer from '../containers/AddPatientDetailsContainer';
-const { DropDownEditor } = Editors;
 import PaginationComponent from '../../ui/components/pagination/PaginationComponent';
-import {FormGroup, ControlLabel, FormControl} from 'react-bootstrap';
- const assigned_physician=[];
+import {FormGroup, FormControl} from 'react-bootstrap';
+
 import ConfirmModal from '../containers/ConfirmModalContainer';
 
 class PatientDetailsComponent extends Component {
@@ -171,7 +168,7 @@ getDropdown(rowValue, source){
 											totalItems={10}
 										    maxShowItem={10}
 										  	handleSelect={this.props.onPatientPageSelect}
-											loadDataByPagination = {this.props.loadPatientData}
+											loadDataByPagination={this.props.loadPatientData}
 											/>
 											</div>
 							</div>

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+
 import {ModalContainer, ModalDialog} from 'react-modal-dialog';
-const {PropTypes} = React;
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+
 import modalConductor from '../../../services/modalConductor';
 
 // import ConfirmModal from '../containers/ConfirmModalContainer';

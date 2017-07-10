@@ -1,6 +1,5 @@
-'use strict';
-
 import React, { Component } from 'react';
+
 import OtherDetails from '../components/OtherDetailsComponent.js';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';

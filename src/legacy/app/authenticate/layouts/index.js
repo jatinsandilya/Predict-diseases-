@@ -1,17 +1,17 @@
-'use strict'
 import React, {Component, PropTypes} from 'react'
+
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+
 import ModalWrapper from '../../core/containers/ModalWrapper.js'
 import {
   closeModal,
 	patientRecordDelConfirm,
 	closePatientConfirmModal
  } from '../../core/actions/AppSubscriptionAction.js';
+
 class AppAuthLayout extends Component {
-	constructor(props) {
-    super(props);
-	} 
+
 	
 	render() {
 		return (

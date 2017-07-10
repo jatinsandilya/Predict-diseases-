@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 
 export default class ImportExport extends Component{
-constructor(props, context) {
-        super(props, context);		
-				//this.closeConfirm=this.props.onClose.bind(this);	
-    }
+
   render(){   
     return(<div>
 				<div className="modal-header pd-b-10">

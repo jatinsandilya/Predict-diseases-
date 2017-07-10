@@ -1,10 +1,5 @@
-import $ from 'jquery';
-import axios from 'axios'
-import ReactDOM from 'react-dom';
-import {Link} from 'react-router';
-import toastr from 'toastr';
 import React, { Component } from 'react';
-import { browserHistory } from 'react-router';
+
 
 export default class NavBarComponent extends Component{
   constructor(props){
@@ -19,7 +14,7 @@ export default class NavBarComponent extends Component{
   render(){
 	var activeMenu=this.props.active;
 	var listItems = this.menuItems.map((list) => {
-		var className=list.id==activeMenu?'active':'';
+		var className=list.id===activeMenu?'active':'';
     return (
       <li id={list.id} key={list.id} className={className}>
 		<a href="">{list.text}</a>

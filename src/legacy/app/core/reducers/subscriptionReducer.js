@@ -1,4 +1,5 @@
-'use strict'
+/* eslint-disable */
+
 const subscriptionReducer = (state = {} , action) => { 
   switch (action.type) {     
     case 'PATIENT_ROW_SELECT':
@@ -201,6 +202,24 @@ const subscriptionReducer = (state = {} , action) => {
         state = Object.assign({},state);
         return state;
       break;
+      case 'ADD_TEAM_MEMBER_SUCCESS':
+        let newTeam = action.newTeam;
+        state = Object.assign({},state,{
+          teamDetails : {
+            rows : [...state.teamDetails.rows,newTeam]
+          }
+        });
+        return state;
+      case 'EDIT_TEAM_MEMBER_SUCCESS':
+       let editedTeam = action.editedTeam;
+       let teamRowIndex = state.selectedTeamDetailsRow[0].rowIdx;
+       let teamDetailsEdited = [...state.teamDetails.rows.slice(0,teamRowIndex), editedTeam , ...state.teamDetails.rows.slice(teamRowIndex+1)]
+       state = Object.assign({},state,{
+          teamDetails : {
+            rows: teamDetailsEdited
+          }
+        });
+      return state;  
       case 'ADD_PATIENT_SUCCESS':
         const newData = action.newData; //works! 
         const patientDetailsNew = [...state.patientDetails.rows,newData]

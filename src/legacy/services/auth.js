@@ -1,15 +1,10 @@
+import toastr from 'toastr';
+import store from '../store';
 
 /*
 * all these helper functions are for checking route authorization & log out purposes
 * */
 
-
-'use strict';
-
-import { browserHistory } from 'react-router';
-
-import toastr from 'toastr';
-import store from '../store';
 
 /**
  * check user authentication from react router

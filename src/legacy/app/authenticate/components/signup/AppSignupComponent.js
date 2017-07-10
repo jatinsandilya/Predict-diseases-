@@ -1,9 +1,9 @@
 import $ from 'jquery';
-import axios from 'axios'
 import ReactDOM from 'react-dom';
 import toastr from 'toastr';
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
+
 import SignupNavBar from './SignupNavBarComponent.js';
 
 class AppSignupComponent extends Component {

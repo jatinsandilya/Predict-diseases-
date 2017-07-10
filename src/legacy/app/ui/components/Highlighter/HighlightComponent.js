@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
 
-import $ from 'jquery';
-import {Link} from 'react-router';
-import ReactDOM from 'react-dom';
-import axios from 'axios'
-import { browserHistory } from 'react-router';
-import toastr from 'toastr';
-
 export default class LoginNavBarComponent extends Component{
   render(){
     return(

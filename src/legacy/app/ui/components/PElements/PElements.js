@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
 export default class PElements extends Component{
   
   getAllErrorMsg(){
      if(this.props.error){
         var p = Object.keys(this.props.error).map((v,i)=>{
-        {
-          return this.getErrorMsg(this.props.error[v],i)}
+          return this.getErrorMsg(this.props.error[v],i)
         })
         return p;
      }
@@ -15,7 +13,7 @@ export default class PElements extends Component{
 
   getErrorMsg(v,i){
     var errorMsg;
-    if(this.props.error && this.props.error!="") {      
+    if(this.props.error && this.props.error!=="") {      
         errorMsg = <b key={i} className="required_msg">{v.errorMsg}</b>;
     }
     return errorMsg;

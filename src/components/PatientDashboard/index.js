@@ -3,8 +3,6 @@ import {
 	Grid,
 	List,
 	Button,
-	Icon,
-	Card,
 	Image,
 	Label,
 	Checkbox,
@@ -18,7 +16,6 @@ import {
 	Area,
 	XAxis,
 	YAxis,
-	CartesianGrid,
 	Tooltip,
 	ResponsiveContainer
 } from 'recharts';

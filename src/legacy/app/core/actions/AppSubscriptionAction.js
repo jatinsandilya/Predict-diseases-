@@ -1,7 +1,7 @@
-'use strict';
-import React from 'react';
 import axios from 'axios';
+
 import {PATIENT_API,TEAM_API} from '../../apiconfig';
+
 const USER_TOKEN = localStorage.getItem('token');
 axios.defaults.headers.common['Authorization'] = 'Bearer '.concat(USER_TOKEN);
 axios.defaults.headers.post['Content-Type'] = 'application/json';

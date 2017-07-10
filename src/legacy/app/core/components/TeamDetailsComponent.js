@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Button, Modal, Popover } from 'react-bootstrap';
+
 import GridComponent from './GridComponent';
 import TeamMemUploadImage from './TeamMemUploadImage';
-import AddTeamDetailsContainer from '../containers/AddTeamDetailsContainer';
 import {ModalContainer, ModalDialog} from 'react-modal-dialog';
 import PaginationComponent from '../../ui/components/pagination/PaginationComponent';
 import ConfirmModal from '../containers/ConfirmModalContainer';
@@ -128,11 +127,6 @@ class TeamDetailsComponent extends Component {
 	  this.props.closeTemplateModal();
   }
   render() {
-		const popover = (
-      <Popover id="modal-popover" title="popover">
-        very popover. such engagement
-      </Popover>
-    );	
 		
     return (
       <section className="dashboard-right-bg-box">
@@ -177,7 +171,7 @@ class TeamDetailsComponent extends Component {
 										maxShowItem={10}
 										activePage={this.props.teamDetails.activePage}
 										handleSelect={this.props.onTeamPageSelect}
-										loadDataByPagination = {this.props.loadTeamData}
+										loadDataByPagination={this.props.loadTeamData}
 										/>
 										</div>
 								</div>

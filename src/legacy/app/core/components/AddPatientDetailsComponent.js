@@ -1,29 +1,10 @@
 import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-//import {DropdownButton,MenuItem} from 'react-bootstrap';
-import {FormGroup, ControlLabel, FormControl} from 'react-bootstrap';
+
+import {FormGroup, FormControl} from 'react-bootstrap';
 import $ from 'jquery';
-import {Link} from 'react-router';
 import ReactDOM from 'react-dom';
-import axios from 'axios';
-
-import { browserHistory } from 'react-router';
 import toastr from 'toastr';
-import Dropzone from 'react-dropzone';
 
-const style = {
-   margin: '0px',
-    padding: '0px',
-    width: '185px',
-    transition: 'all 0.5s',
-    width: '147px',
-    height: '147px',
-    position: 'relative',
-};
-
-const activeStyle = {
-};
 var filesData={files:[]};
 
 export default class AddPatientDetailsComponent extends Component{
@@ -51,7 +32,7 @@ showFiles() {
                         files.map((file, idx) => {
                             return (
                                 <li key={idx}>
-                                    <img src={file.preview} width={100}/>
+                                    <img src={file.preview} alt='file-preview' width={100}/>
                                     <div>{file.name + ' : ' + file.size + ' bytes.'}</div>
                                 </li>
                             )
@@ -79,7 +60,7 @@ openAfter() {
 
 		
 	setDefaultVal(fieldName){
-			if(this.actionType=='edit' && this.editPatientData){
+			if(this.actionType==='edit' && this.editPatientData){
 				return this.editPatientData[fieldName];
 			}else{
 				return "";
@@ -100,7 +81,7 @@ ondropdownChange(event){
 
   render(){
 		this.actionType=this.props.selectedPatientDetailsRow.action;
-		if( this.props.selectedPatientDetailsRow && this.actionType == 'edit'){
+		if( this.props.selectedPatientDetailsRow && this.actionType === 'edit'){
 			if(this.props.selectedPatientDetailsRow.selectedPatientDetailsRow){
 				this.editPatientData=this.props.selectedPatientDetailsRow.selectedPatientDetailsRow[0].row;
 			}
@@ -211,7 +192,7 @@ ondropdownChange(event){
 							<div className="row">
 								<div className="col-md-12">
 									<button type="submit" className="btn db-table-btn">
-										{(this.actionType == 'edit')?"Update Patient":"Add Patient"}
+										{(this.actionType === 'edit')?"Update Patient":"Add Patient"}
 										</button>
 								</div>
 							</div>

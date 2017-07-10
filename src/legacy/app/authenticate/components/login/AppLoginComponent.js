@@ -1,20 +1,13 @@
 import $ from 'jquery';
-import axios from 'axios'
 import ReactDOM from 'react-dom';
-import {Link} from 'react-router';
 import toastr from 'toastr';
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
+
 import LoginNavBar from './LoginNavBarComponent.js';
 import LoginFooter from './LoginFooterComponent.js';
 
 class AppLoginComponent extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidMount() {
-  }
 
   render() {
     return (

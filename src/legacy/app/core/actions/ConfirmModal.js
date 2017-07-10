@@ -1,7 +1,4 @@
-'use strict'
-
 import axios from 'axios';
-import config from '../../../config'
 
 // Request:  
 // curl -H "Authorization: Bearer dda67c8ded86c5c3e4374a863c9c52521d60ae14ccb8" -H  "Content-Type: application/json" -d {} -X 

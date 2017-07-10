@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+
 import {validate} from './service/PValidators';
 export default class PInput extends Component{
   constructor(props){
@@ -31,7 +31,7 @@ export default class PInput extends Component{
     }
   }
 getElement(){
- if(this.props.type == 'textarea'){
+ if(this.props.type === 'textarea'){
         return (<textarea
                 className={this.props.elementClass} 
                 id={this.props.id} 

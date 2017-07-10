@@ -1,7 +1,5 @@
-'use strict';
-
 import axios from 'axios';
-import config from '../../../config'
+
 import {ORG_API} from '../../apiconfig';
 
 const USER_TOKEN = localStorage.getItem('token');

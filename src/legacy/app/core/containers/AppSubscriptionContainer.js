@@ -1,6 +1,5 @@
-'use strict';
-
 import React, { Component } from 'react';
+
 import { appSubscription, 
   handleGridRowsUpdated,
   teamHandleGridRowsUpdated,  
@@ -27,7 +26,6 @@ import { appSubscription,
   patientRecordDelConfirm,
   showConfirmPatientModal,
   closePatientConfirmModal,
-  openTemplateModal,
   openTemplatePatientModal,
   closeTemplateModal
  } from '../actions/AppSubscriptionAction.js';
@@ -38,9 +36,7 @@ import { connect } from 'react-redux';
 
 
 class AppSubscriptionContainer extends Component {
-  constructor(props){
-    super(props);
-  }
+
   render() {    
     return (
       <AppSubscriptionComponent {...this.props}/>

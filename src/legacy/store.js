@@ -1,8 +1,7 @@
-'use strict'
-
 import thunk from 'redux-thunk';
 import {logger} from 'redux-logger';
-import { createStore, combineReducers, applyMiddleware } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
+
 import axios from 'axios';
 import reducers from './reducers.js'
 

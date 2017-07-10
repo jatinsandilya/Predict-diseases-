@@ -1,7 +1,3 @@
-'use strict'
-
-import * as constants from '../constants.js';
-
 const defaultState = {
   token: localStorage.getItem('token') ? localStorage.getItem('token') : null,
   message: localStorage.getItem('message') ? localStorage.getItem('message') : null

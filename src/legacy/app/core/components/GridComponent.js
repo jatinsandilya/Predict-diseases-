@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import {Editors} from 'react-data-grid-addons';
-import ReactDOM from 'react-dom';
+
 import ReactDataGrid from 'react-data-grid';
 import PToolbar from '../../ui/components/PTableToolbar/PTableToolbar';
  
@@ -67,7 +66,6 @@ handleGridRowsUpdated({ fromRow, toRow, updated }) {
 
     console.log('ingrid component', this.props);  
     //const rowText = this.props.selectedIndexes.length === 1 ? 'row' : 'rows';
-    var rowGetter = rowNumber => this.props.rows[rowNumber]  
 		return (<div> 
 		 {this.renderGrid()}
      </div> 

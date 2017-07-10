@@ -1,9 +1,4 @@
-'use strict';
-
 export default function toImageUrl(src, callback, outputFormat) {
-    var MAX_WIDTH = 1200;
-    var MAX_HEIGHT = 1200;
-    var OUTPUT_QUALITY = .75;
 
   var img = new Image();
   img.crossOrigin = 'Anonymous';

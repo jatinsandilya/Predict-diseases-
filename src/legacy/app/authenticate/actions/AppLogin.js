@@ -1,6 +1,5 @@
-'use strict';
-
 import axios from 'axios';
+
 import {AUTH_API} from '../../apiconfig';
 
 /*

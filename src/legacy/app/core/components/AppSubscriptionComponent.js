@@ -5,11 +5,7 @@ import SubscriptionComponent from './SubscriptionComponent'
 
 
 class AppSubscriptionComponent extends Component {
-  constructor(props) {
-    super(props);
-  }
-  componentDidMount() {
-  }
+
   componentWillMount() {
      this.props.loadPatientData();
      this.props.loadTeamData();

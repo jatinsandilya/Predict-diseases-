@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
+
 
 import $ from 'jquery';
-import {Link} from 'react-router';
-import ReactDOM from 'react-dom';
-import axios from 'axios';
 
-import { browserHistory } from 'react-router';
+
 import toastr from 'toastr';
 import Dropzone from 'react-dropzone';
 import PElements from '../../ui/components/PElements/PElements';
 import PInput from '../../ui/components/PElements/PInput';
-import {PRequired,PRange } from '../../ui/components/PElements/service/PValidators';
+import {PRequired} from '../../ui/components/PElements/service/PValidators';
 import Immutable from 'immutable';
 import toImageUrl from '../../../services/convertBase64';
 
@@ -20,7 +16,7 @@ const activeStyle = {
 };
 
 const filesData={files:[]};
-var filePayload="";
+
 export default class AddOrgComponent extends Component{
 
 constructor(props, context) {
@@ -312,7 +308,7 @@ handleOptionChange(changeEvent){
 		});
 }
 handleOrganisationSubmit(event) {
-    const thisObj = this;
+   
     event.preventDefault();
 	const organisation_name = this.organisationName.value;
 	const phone_number = this.phoneNumber.value;
@@ -320,9 +316,6 @@ handleOrganisationSubmit(event) {
 	const contact_person = this.contactPerson.value;
 	const address = this.address.value;
 	const website = this.website.value;
-	const orgType = {
-		
-	}
 	const organisation_type = this.state.selectedOrgRadio;
 	const organisation_image = this.refs.orgAvtar.value;
     // create a user object

@@ -1,10 +1,7 @@
-import $ from 'jquery';
-import axios from 'axios'
-import ReactDOM from 'react-dom';
-import toastr from 'toastr';
 import React, { Component } from 'react';
+
 import {Link} from 'react-router';
-import { browserHistory } from 'react-router';
+
 
 export default class SignupNavBarComponent extends Component{
   render(){

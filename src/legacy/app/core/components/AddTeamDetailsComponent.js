@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import {Link} from 'react-router';
 import ReactDOM from 'react-dom';
-import axios from 'axios';
 import toastr from 'toastr';
 import Dropzone from 'react-dropzone';
 import toImageUrl from '../../../services/convertBase64';
@@ -27,7 +25,7 @@ constructor(props, context) {
     }
 
 		setDefaultVal(fieldName){
-			if(this.actionType=='edit' && this.editTeamData){
+			if(this.actionType==='edit' && this.editTeamData){
 				return this.editTeamData[fieldName];
 			}else{
 				return "";
@@ -37,7 +35,7 @@ constructor(props, context) {
   render(){
 		
 		this.actionType=this.props.selectedTeamDetailsRow.action;
-		if( this.props.selectedTeamDetailsRow && this.actionType == 'edit'){
+		if( this.props.selectedTeamDetailsRow && this.actionType === 'edit'){
 			if(this.props.selectedTeamDetailsRow.selectedTeamDetailsRow){
 				this.editTeamData=this.props.selectedTeamDetailsRow.selectedTeamDetailsRow[0].row;
 			}
@@ -59,7 +57,7 @@ constructor(props, context) {
                 <Dropzone onDrop={this.onDrop.bind(this)}
                           ref="dropzone"
                           style={{display: 'inline-block'}}>
-										<img id="teamThumbnail" className="img-responsive avtar-thumbnai" ref="dropzoneThumbnail" src="images/upload-btn.jpg" />
+										<img id="teamThumbnail" alt="Team Thumbnail" className="img-responsive avtar-thumbnai" ref="dropzoneThumbnail" src="images/upload-btn.jpg" />
 										<input id="teamAvtar" ref="teamAvtar" type="hidden" />
                 </Dropzone><div>
 								{/*<a onClick={this.openAfter.bind(this)} className="btn choose_btn">Import File</a>*/}
@@ -120,7 +118,7 @@ constructor(props, context) {
               <div className="row">
 								<div className="col-md-12">
 									<button type="submit" className="btn db-table-btn">
-											{(this.actionType == 'edit')?"Update Team Member":"Add Team Member"}
+											{(this.actionType === 'edit')?"Update Team Member":"Add Team Member"}
 										</button>
 								</div>
 							</div>
@@ -163,8 +161,8 @@ handleTeamDetailsSubmit(event) {
     };
 		var queryData={};
 		if(this.props.selectedTeamDetailsRow.action === 'edit'){
-			console.log("DEBUG!!: \n",this.editTeamData.organisation_id);
-			queryData={team_info:team_info,team_member_id:this.editTeamData.organisation_id};
+			console.log("DEBUG!!: \n",this.props.selectedTeamDetailsRow.selectedTeamDetailsRow[0].row.physician_id);
+			queryData={team_info:team_info, physician_id : this.props.selectedTeamDetailsRow.selectedTeamDetailsRow[0].row.physician_id};
 		}
 		else{
 			queryData={team_info:team_info};

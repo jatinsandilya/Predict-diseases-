@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import ReactDOM from 'react-dom';
-import axios from 'axios';
 import toastr from 'toastr';
 import SubscriptionHilight from '../../ui/components/Highlighter/HighlightComponent';
+
 export default class OtherDetails extends Component{
-	constructor(props, context) {
-        super(props, context);			
-    }
+
   render(){
     return(
      <section className="dashboard-right-bg-box subs_form">
