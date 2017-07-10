@@ -1,0 +1,681 @@
+/*
+  @description: this is the css file to write all kids of hacks and shortcodes for styling in TeachFlex project
+
+*/
+
+a, a:hover, a:focus{
+  text-decoration: none;
+}
+
+.hvh{
+  height: 100vh;
+}
+
+.ptop1{
+  padding-top: 1rem;
+}
+
+.ptop2{
+  padding-top: 2rem;
+}
+
+.eclass{
+  color: #4bbfcb;
+}
+
+.whcol{
+  color: #fff;
+}
+
+.hop{
+  height: 100%;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+  background-color: #fff;
+}
+
+.marpadzero{
+  margin: 0px;
+  padding: 0px;
+}
+
+.wid30rem{
+  width: 30.5rem !important;
+}
+
+.wid50{
+  width: 50%;
+  margin-left: 1rem;
+}
+
+.vatop{
+  vertical-align: top;
+}
+
+.marzero{
+  margin: 0px;
+}
+
+
+
+.pad5{
+  padding: 5rem;
+}
+
+.awbg{
+  /*width: 1060px;
+height: 1059px;*/
+background-color: #FFFFFF;
+box-shadow: 0 1px 4px 0 rgba(0,0,0,0.11);
+border-radius: 5px;
+}
+
+.mtop05{
+  margin-top: 0.5rem;
+}
+
+.padzero{
+  padding: 0px;
+}
+
+.wid265{
+  width: 265px;
+}
+
+.widchange{
+  width: 66%;
+}
+
+.padleft{
+  padding-left: 5rem !important;
+}
+
+.pl3{
+  padding-left: 3rem;
+}
+
+.classmargin{
+  margin: 1rem;
+}
+
+.leftspace{
+  margin-left: 1rem;
+}
+
+.ml2{
+  margin-left: 2rem;
+}
+.marginbot{
+  margin-bottom: 1rem;
+}
+
+.ptop3{
+  padding-top: 3rem;
+}
+
+.ptopzero{
+  padding-top: 0rem !important;
+}
+
+.dashpad{
+  padding: 1rem;
+}
+
+.halfpad{
+  padding: 0.5rem;
+}
+
+.decimalpad{
+  padding: 1.17rem;
+}
+
+.boxshadows{
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+}
+
+.marleft{
+  margin-left: 2rem;
+}
+
+.ml4{
+  margin-left: 4rem;
+}
+
+.marright{
+  margin-right: 2rem;
+}
+
+.mr05{
+  margin-right: 0.5rem;
+}
+
+.btlr{
+  border-top-left-radius: 5px;
+}
+
+.bblr{
+  border-bottom-left-radius: 5px;
+}
+
+.borrad{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.borrightrad{
+  border-bottom-right-radius: 5px;
+}
+
+.bordars{
+  border-radius: 5px;
+}
+
+.moneleft{
+  margin-left: 0.5rem;
+}
+
+.moneright{
+  margin-right: 1rem;
+}
+
+.mbot3{
+  margin-bottom: 3rem;
+}
+
+.mtop5rem{
+  margin-top: 5rem;
+}
+
+.padbot5rem{
+  padding-bottom: 5rem;
+}
+
+.margins{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.wid300{
+  width: 300px;
+}
+.mtop3{
+  margin-top: 3rem;
+}
+
+.pad15{
+  padding-left: 1.5rem;
+}
+
+.pad2{
+  padding: 2rem;
+}
+
+.allbg{
+  background-color: #F0F4F8;
+}
+
+.stpad{
+  padding-right: 25px;
+  padding-left: 20px;
+}
+
+.formbg{
+  background-color: #FAFAFA;
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+}
+
+.wid10{
+  width: 10rem;
+}
+
+.h55{
+  height: 5.5rem;
+}
+
+.breadcrumb > li + li:before{
+  padding: 0 5px;
+  /*color: #ccc;*/
+  /*content: "/\A0";*/
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  /*border: 1px solid #187C7A;*/
+  content: url('/images/Path 2.png');
+  vertical-align: middle;
+}
+
+.carousel-control{
+  width: 0%;
+  top: 50%;
+}
+
+.carousel-control.left{
+  background-image: none;
+}
+
+.carousel-control.right{
+  background-image: none;
+}
+
+.m11{
+  margin-left: 5rem;
+}
+
+.nt-booknot{
+  position: absolute;
+  top: 1rem;
+  left: 3.3rem;
+}
+
+.sideborder{
+  border-left: 1px solid #E0E4E8;
+}
+
+.veralign{
+  vertical-align: middle;
+}
+
+.padtop05{
+  padding-top: 0.5rem;
+}
+
+.wid200{
+  width: 200px;
+}
+
+.wid220{
+  width: 220px;
+}
+
+.flr{
+  float: right;
+  margin-bottom: 1rem;
+}
+
+/*rodal style*/
+.rodal-dialog{
+  padding: 0px;
+}
+/*rodal style*/
+.botbor {
+  border-bottom: 1px solid rgba(141, 156, 168, 0.2);
+}
+.marleft05{
+  margin-left: 0.5rem;
+}
+
+.mauto{
+  margin: auto;
+}
+
+.txtcenter{
+  text-align: center;
+}
+
+.flexprops{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.flexitems{
+  flex: 1 0 auto;
+}
+
+.mt1{
+  margin-top: 1rem;
+}
+
+.nt-req{
+  position: absolute;
+  top: 0.3rem;
+  left: 4.3rem;
+}
+
+.padrl{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.padbot3{
+  padding-bottom: 3rem;
+}
+
+.padbot05{
+  /*padding-bottom: 1rem;*/
+  vertical-align: middle;
+}
+
+.wid240{
+  width: 240px;
+}
+
+.padr2{
+  padding-right: 2rem;
+}
+
+.padl2{
+  padding-left: 2rem;
+}
+
+.ml21rem{
+  margin-left: 21rem;
+}
+
+.cpoint{
+  cursor: pointer;
+}
+
+.marauto{
+  margin: 0 auto;
+}
+
+.mplzero{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.m3{
+  margin: 3rem;
+}
+
+.bleft{
+  border-left: 1px solid rgba(247,249,251,0.5);
+}
+
+.bright{
+  border-right: 1px solid rgba(247,249,251,0.5);
+}
+
+.cbr{
+  border-right: 1px solid rgba(167,167,167,0.2);
+}
+
+.wrapborder{
+  border: 1px solid #D1D7DC;
+}
+
+.scolbg{
+  background-color: #F7F9FB;
+}
+
+
+.dtbordars{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.panel-body{
+  padding: 0px;
+}
+
+
+.wid100{
+  width: 100%;
+}
+
+.txtdec{
+  text-decoration: none;
+}
+
+.wid20{
+  width: 20px !important;
+}
+
+.sidebg{
+  /*height: 100vh;*/
+  padding: 3rem;
+  /*background-color: #F7F9FB;*/
+}
+
+.pad3{
+  padding: 3rem;
+}
+
+.roundimg{
+  width: 27.6px;
+  height: 27.69px;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+  border-radius: 100%;
+}
+
+.hi5{
+  height: 5rem;
+}
+
+.mlzero{
+  margin-left: 0rem;
+}
+
+.bgcolt{
+  background-color: transparent !important;
+}
+
+.btlr{
+  border-top-left-radius: 5px;
+}
+.commonbg{
+  background-color: #F7F9FB;
+}
+
+.dropdown-menu{
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+
+/*react tab panel*/
+.react-tab-panel__tab-strip--theme-default.react-tab-panel__tab-strip--tab-position-top .react-tab-panel__tab-title--active{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #F0F4F8;
+}
+
+.react-tab-panel--theme-default .react-tab-panel__body--tab-position-top{
+  /*height: 100vh;*/
+  border: none;
+  background-color: #F0F4F8;
+}
+
+.react-tab-panel__tab-strip--theme-default.react-tab-panel__tab-strip--tab-position-top .react-tab-panel__tab-title--active{
+  border-top: none;
+}
+
+.react-tab-panel__tab-strip--theme-default .react-tab-panel__tab-title:not(.react-tab-panel__tab-title--active){
+font-family: 'Montserrat Regular';
+font-size: 16px;
+/*line-height: 22px;*/
+color: #8D9CA8 !important;
+}
+
+.react-tab-panel__tab-strip--theme-default.react-tab-panel__tab-strip--tab-position-top .react-tab-panel__tab-title-inner--active{
+font-family: 'Montserrat Regular';
+font-size: 16px;
+/*line-height: 22px;*/
+color: #444E5A !important;
+}
+
+.react-tab-panel__tab-strip-inner{
+  left: 100px !important;
+}
+
+.react-tab-panel__tab-strip--theme-default.react-tab-panel__tab-strip--tab-position-top .react-tab-panel__tab-title-inner--active{
+  font-family: 'Montserrat Regular';
+}
+.englishcol{
+  background-color: #F39A24 ;
+  border-color: #F39A24;
+}
+.gscol{
+  background-color: #B12B3D ;
+  border-color:#B12B3D;
+}
+.humancol{
+  background-color: #E73F37 ;
+  border-color:#E73F37;
+}
+.langcol{
+  background-color: #EB7231 ;
+  border-color:#EB7231;
+}
+.mathcol{
+  background-color: #4BBFCB ;
+  border-color:#4BBFCB;
+}
+.sciencecol{
+  background-color: #82C484 ;
+  border-color:#82C484;
+}
+.sscol{
+  background-color: #539C80 ;
+  border-color:#539C80;
+}
+.techcol{
+  background-color: #197D7B ;
+  border-color: #197D7B;
+}
+.artscol{
+  background-color: #86153D ;
+  border-color:#86153D;
+}
+/*react tab panel*/
+
+
+/*table hacks*/
+.table > thead > tr > th{
+  vertical-align: bottom;
+  border-bottom: none;
+}
+/*table {
+  border-collapse: separate;
+  background:#fff;
+  @include border-radius(5px);
+  margin:50px auto;
+  @include box-shadow(0px 0px 5px rgba(0,0,0,0.3));
+}
+
+thead {
+  @include border-radius(5px);
+}
+
+thead th {
+  font-family: 'Patua One', cursive;
+  font-size:16px;
+  font-weight:400;
+  color:#fff;
+  @include text-shadow(1px 1px 0px rgba(0,0,0,0.5));
+  text-align:left;
+  padding:20px;
+  @include background-image(linear-gradient(#646f7f, #4a5564));
+  border-top:1px solid #858d99;
+
+  &:first-child {
+   @include border-top-left-radius(5px);
+  }
+
+  &:last-child {
+    @include border-top-right-radius(5px);
+  }
+}
+
+tbody tr td {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  color:#5f6062;
+  font-size:13px;
+  padding:20px 20px 20px 20px;
+  border-bottom:1px solid #e0e0e0;
+
+}
+
+tbody tr:nth-child(2n) {
+  background:#f0f3f5;
+}
+
+tbody tr:last-child td {
+  border-bottom:none;
+  &:first-child {
+    @include border-bottom-left-radius(5px);
+  }
+  &:last-child {
+    @include border-bottom-right-radius(5px);
+  }
+}
+
+tbody:hover > tr td {
+  @include opacity(0.5);*/
+
+  /* uncomment for blur effect */
+  /* color:transparent;
+  @include text-shadow(0px 0px 2px rgba(0,0,0,0.8));*/
+/*}
+
+tbody:hover > tr:hover td {
+  @include text-shadow(none);
+  color: #2d2d2d;
+  @include opacity(1.0);
+}*/
+
+/*table hacks*/
+
+
+/*subject colors*/
+.englishcol{
+  background-color: #F39A24;
+}
+.gscol{
+  background-color: #B12B3D;
+}
+.humancol{
+  background-color: #E73F37;
+}
+.langcol{
+  background-color: #EB7231;
+}
+.mathcol{
+  background-color: #4BBFCB;
+}
+.sciencecol{
+  background-color: #82C484;
+}
+.sscol{
+  background-color: #539C80;
+}
+.techcol{
+  background-color: #197D7B;
+}
+.artscol{
+  background-color: #86153D;
+}
+/*subject colors*/
+
+
+/*calendar hacks*/
+
+.fc-time{
+  display: block;
+}
+
+.fc-title{
+  /*display: block;*/
+  margin-right: 1rem;
+}
+
+/*calendar hacks*/
+
+/*navbar hacks*/
+
+.navbar-default{
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a{
+  color: #fff;
+}
+
+/*a, a:hover, a:focus{
+  color: #fff;
+}*/
+
+/*navbar hacks*/

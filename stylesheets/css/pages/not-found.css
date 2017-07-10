@@ -1,0 +1,21 @@
+.notfound_message {
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .notfound_message {
+    padding-top: 4.375em;
+
+    text-align: center;
+  }
+}
+
+.notfound_message > h2 {
+  color: #ec6608;
+}
+
+@media only screen and (max-width: 600px) {
+  .notfound_message > h2 {
+    font-size: 2.4rem;
+  }
+}

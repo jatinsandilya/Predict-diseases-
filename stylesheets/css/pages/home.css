@@ -1,0 +1,224 @@
+.nt-home{
+background-color: #4BBFCB;
+/*box-shadow: 0 0 3px 0 rgba(0,0,0,0.05);*/
+}
+
+.nt-home .bigheader p{
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+  font-family: 'Montserrat Regular';
+  font-size: 35px;
+  line-height: 54px;
+  color: #444E5A;
+}
+
+.nt-home .smallheader p{
+margin-bottom: 3rem;
+font-family: "Open Sans";
+font-size: 16px;
+line-height: 28px;
+color: #8D9CA8;
+}
+
+.nt-home .pickmsg p{
+font-family:'Montserrat Regular';
+font-size: 16px;
+text-align: center;
+line-height: 54px;
+color: #444E5A;
+}
+
+.nt-home .subchoose{
+background-color: #4BBFCB;
+box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+border-radius: 5px;
+}
+
+.nt-home .subcard{
+  padding-top: 1rem;
+  text-align: center;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.nt-home .subname{
+/* width: 76px; */
+height: 24px;
+font-family: 'Montserrat Regular';
+font-size: 16px;
+text-align: center;
+line-height: 24px;
+color: #FFFFFF;
+}
+
+.nt-home .homelogo{
+  height: 65px;
+}
+
+.nt-home .explore{
+  box-sizing: border-box;
+  border-left: 1px solid #E0E4E8;
+  border-right: 1px solid #E0E4E8;
+}
+
+.nt-home .homebtn{
+    width: 110px;
+    height: 40px;
+    font-family: 'Montserrat Regular';
+    font-size: 14px;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+    border: 1px solid #4BBFCB;
+    border-radius: 5px;
+    background-color: #4BBFCB;
+}
+
+.nt-home .homept{
+  padding-top: 2rem;
+}
+
+.nt-home .homeloginbtn{
+  width: 110px;
+  height: 40px;
+  font-family: 'Montserrat Regular';
+  font-size: 14px;
+  text-align: center;
+  line-height: 22px;
+  color: #4BBFCB;
+  border: 1px solid #4BBFCB;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.nt-home .works{
+  border-left: 1px solid #E0E4E8;
+}
+
+.nt-home .sicon{
+  margin-right: 2rem;
+  vertical-align: middle;
+}
+
+.nt-home .pchoose{
+  /*width: 130px;
+height: 100px;*/
+background-color: #E73F37;
+box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+border-radius: 5px;
+}
+
+.nt-home .cchoose{
+  /*width: 130px;
+height: 100px;*/
+background-color: #F39A24;
+box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+border-radius: 5px;
+}
+
+.nt-home .bchoose{
+  /*width: 130px;
+height: 100px;*/
+background-color: #82C484;
+box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+border-radius: 5px;
+}
+
+.nt-home .hero-banner{
+  background-color: #F7F9FB;
+}
+
+.bg-dark {
+  background-color: #F7F9FB;
+}
+
+.homemidpic{
+  width: 50px;
+  height: 50px;
+}
+
+.hwtext{
+font-family: 'Montserrat Regular';
+font-size: 33px;
+color: #444E5A;
+}
+
+.smallhw{
+  font-family: "Open Sans";
+  font-size: 20px;
+  /*line-height: 28px;*/
+  color: #444E5A;
+}
+
+.headtxt{
+font-family: 'Montserrat Regular';
+font-size: 22px;
+color: #444E5A;
+}
+
+.paratxt{
+font-family: "Open Sans";
+font-size: 16px;
+line-height: 28px;
+color: rgba(68,78,90,0.5);
+}
+
+.hwsec{
+  background-color: #edf1f2;
+}
+
+.ols .fill-light{
+  fill:#000;
+}
+
+.ol-bg{
+  background-color: #edf1f2;
+  color: #9ea4b9;
+}
+
+.elearnsec{
+  background-color: #000;
+  padding-bottom: 3rem;
+}
+
+.elharea{
+  margin-bottom: 5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.elearnhead{
+font-family: 'Montserrat Regular';
+font-size: 33px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.elearnpara{
+font-family: "Open Sans";
+font-size: 20px;
+text-align: center;
+/*line-height: 28px;*/
+color: #FFFFFF;
+}
+
+.elnumber{
+font-family: 'Montserrat Regular';
+font-size: 50px;
+text-align: center;
+/*line-height: 61px;*/
+color: #FFFFFF;
+}
+
+.elafter{
+font-family: "Open Sans";
+font-size: 16px;
+text-align: center;
+color: rgba(255,255,255,0.5);
+}
+
+.midsearch{
+  height: 5rem;
+  border-radius: 0px;
+}

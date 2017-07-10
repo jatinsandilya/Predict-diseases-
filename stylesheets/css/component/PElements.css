@@ -1,0 +1,6 @@
+.required_asterisk{
+        color: red;
+    font-weight: bold;
+    padding: 0 2px;
+}
+.required_msg{font-size: 10px;color: red;}

@@ -1,0 +1,23 @@
+.narcissus_n3sdvf{
+  display: none !important;
+}
+.narcissus_17w311v{
+  padding:0px;
+}
+.narcissus_17w311v .dashboard-right-bg-box .container-fluid{
+  padding: 0;max-width: 800px;
+}
+.narcissus_17w311v .dashboard-right-bg-shadow{
+  box-shadow:none;
+  -webkit-box-shadow:none;
+}
+
+/*confirm modal*/
+.modal-header.pd-b-10{
+  padding:0 0 10px 0;
+}
+.modal-footer
+.modal-footer.no-border{
+  padding: 5px 0 0 0;
+  border:0px;
+}

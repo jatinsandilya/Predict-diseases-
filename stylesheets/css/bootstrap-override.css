@@ -1,0 +1,27 @@
+.btn:active {
+  box-shadow: none;
+}
+
+.tooltip {
+  white-space: nowrap;
+}
+
+.tooltip-inner {
+  background-color: #454545;
+}
+
+.tooltip.top .tooltip-arrow, .tooltip.top-left .tooltip-arrow, .tooltip.top-right .tooltip-arrow {
+  border-top-color: #454545;
+}
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: #454545;
+}
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: #454545;
+}
+
+.tooltip.bottom .tooltip-arrow, .tooltip.bottom-left .tooltip-arrow, .tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: #454545;
+}
