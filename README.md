@@ -5,9 +5,9 @@ Please follow the following steps to run the project on your local machine.
 If you have `yarn` installed then use the `yarn` command else just use the `npm` command.
 
 ## Clone the Repo ##
-`git clone git@bitbucket.org:nitinmlvya/c2a_frontend_v2.git`
+`git clone this url`
 
-`cd c2a_frontend_v2`
+`cd into the folder created`
 
 ## Install node packages ##
 
