@@ -1,9 +1,8 @@
 import React from 'react'
-import { Route, IndexRoute } from 'react-router'
+import { Route } from 'react-router'
 
 import AuthLayout from '../layouts';
 import AppLoginContainer from '../containers/AppLoginContainer.js';
-import AppSignupContainer from '../containers/AppSignupContainer.js';
 import AppSubscriptionContainer from '../../core/containers/AppSubscriptionContainer.js';
 import * as AuthService from '../../../services/auth';
 

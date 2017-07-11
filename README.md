@@ -27,3 +27,10 @@ or
 
 
 The project should run at `http://localhost: 3000`
+
+## Build the project ##
+
+`npm run build`
+
+
+The build folder should be created which you can host like any other static website.

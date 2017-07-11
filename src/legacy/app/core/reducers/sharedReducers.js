@@ -1,3 +1,4 @@
+/* eslint-disable */
 const sharedReducers = (
     state = { 
         modalInstance:{currentModal:null}

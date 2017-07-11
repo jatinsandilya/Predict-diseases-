@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+/* eslint-disable */
+import React from 'react';
+
 import ConfirmModal from '../app/core/containers/ConfirmModalContainer';
 import ImportExportModal from '../app/core/components/ImportExportModal';
 import AddTeamDetailsContainer from '../app/core/containers/AddTeamDetailsContainer';
@@ -23,10 +25,3 @@ export default function modalConductor(props) {
     }
 }
 
-// onConfirmDel() {
-// 	this.props.patientRecordDelConfirm(this.props.selectedPatientDetailsRow);
-//   }
-  
-//   closeConfirm() {		
-// 	this.props.closePatientConfirmModal();
-//   }

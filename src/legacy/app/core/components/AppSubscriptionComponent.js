@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PredictDiseases_navBar from './NavBarComponent.js';
-import PredictDiseases_siteMap from './SiteMapComponent.js';
+import PredictDiseasesNavBar from './NavBarComponent.js';
+import PredictDiseasesSiteMap from './SiteMapComponent.js';
 import SubscriptionComponent from './SubscriptionComponent'
 
 
@@ -13,10 +13,10 @@ class AppSubscriptionComponent extends Component {
   render() {
     return (
       <div>       
-        <PredictDiseases_siteMap active="1"/>
+        <PredictDiseasesSiteMap active="1"/>
         <div className="aside-margin">
         <div className="dashboard-right">
-             <PredictDiseases_navBar title="Organisation Profile and Subscription Management"/>
+             <PredictDiseasesNavBar title="Organisation Profile and Subscription Management"/>
              <SubscriptionComponent {...this.props}/>
             </div>
         </div>        
